@@ -26,7 +26,22 @@ var events = {
 	domready: 'domklaar'
 };
 
+var newElement = function(tag, props){
+	return new Element(tag, props);
+};
+
+var newClass = function(object){
+	return new Class(object);
+};
+
 var translation = {
+
+	initialize: function(){
+		window.venster = window;
+		window.nieuwElement = newElement
+		window.nieuweKlasse = newClass;
+	},
+
 	Element: { // Element
 		getElement: 'pakElement',
 		getElements: 'pakElementen',
