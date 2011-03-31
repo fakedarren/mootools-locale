@@ -14,7 +14,9 @@ var stijlen = {
 	color: 'kleur',
 	margin: 'marge',
 	padding: 'vulling',
-	border: 'rand'
+	border: 'rand',
+	width: 'breedte',
+	height: 'hoogte'
 };
 
 var events = {
@@ -103,7 +105,18 @@ var translation = {
 			arguments: [stijlen]
 		},
 		setStyles: 'zetStijlen',
-		getStyles: 'pakStijlen'
+		getStyles: 'pakStijlen',
+
+		// Element.Dimensions
+		scrollTo: 'scrollNaar',
+		getSize: 'pakGrootte',
+		getScrollSize: 'pakScrollGrootte',
+		getScroll: 'pakScroll',
+		getPosition: 'pakPositie',
+		setPosition: 'zetPositie',
+		getCoordinates: 'pakCoördinaten',
+		setCoordinates: 'zetCoördinaten',
+		getOffsetParent: 'pakOffsetOuder'
 
 	},
 
@@ -111,6 +124,13 @@ var translation = {
 	Document: {},
 
 	Array: {
+
+		'static': {
+			each: 'elke',
+			clone: 'kloon',
+			from: 'van'
+		},
+
 		each: 'elke',
 		invoke: 'roepAan',
 		every: 'iedere',
@@ -133,6 +153,67 @@ var translation = {
 		pick: 'pik',
 		hexToRgb: 'hexNaarRgb',
 		rgbToHex: 'rgbNaarHex'
+	},
+
+	String: {
+
+		'static': {
+			from: 'van',
+			uniqueID: 'uniekeID'
+		},
+
+		//test: 'test',
+		contains: 'bevat',
+		//trim: 'trim',
+		clean: 'opruimen',
+		camelCase: 'kamelenLetters',
+		hyphenate: 'koppelen',
+		capitalize: 'hoofdLetters',
+		escapeRegExp: 'ontsnapRegExp',
+		hexToRgb: 'hexNaarRgb',
+		rgbToHex: 'rgbNaarHex',
+		substiture: 'substitueer',
+		stripScripts: 'ontkleedScripts'
+	},
+
+	Function: {
+
+		'static': {
+			from: 'van',
+			attempt: 'probeer'
+		},
+
+		extend: 'uitbreiden',
+		implement: 'implementeer',
+		attempt: 'probeer',
+		pass: 'doorgeven',
+		//bind: 'bind',
+		delay: 'uitstellen',
+		periodical: 'periodiek'
+	},
+
+	Number: {
+
+		'static': {
+			from: 'van',
+			random: 'willekeurig'
+		},
+
+		limit: 'beperk',
+		round: 'rondAf',
+		times: 'keer',
+		toFloat: 'naarDrijvendeKomma',
+		toInt: 'naarInteger'
+	},
+
+	window: {
+		'static': {
+			Number: 'Nummer',
+			Array: 'Reeks',
+			Function: 'Functie',
+			String: 'Snaar',
+			Window: 'Venster'
+		}
 	}
 
 };
