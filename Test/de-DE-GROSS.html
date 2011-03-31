@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Locale.API</title>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/mootools/1.3.1/mootools.js"></script>
+	<script src="mootools-more.js"></script>
+	
+	<script src="../Source/Locale.API.js"></script>
+	<script src="../Source/Locale.de-DE.API.js"></script>
+
+	<script>
+		Locale.use('de-DE-GROß');
+
+		FENSTER.FÜGEEREIGNISHINZU('domverfügbar', function(){
+			var element = NEUESELEMENT('div');
+			element.EINFÜGENIN(document.body);
+
+			element
+				.SETZESTIL('farbe', '#ff0')
+				.SETZE('text', 'Hallo Welt!');
+
+			[1, 2, 3].ALLE(function(wert, index){
+				console.log(wert, index);
+			});
+
+		});
+
+	</script>
+
+</head>
+<body>
+
+	Hi
+
+</body>
+</html>
