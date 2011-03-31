@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Locale.API</title>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/mootools/1.3.1/mootools.js"></script>
+	<script src="mootools-more.js"></script>
+	
+	<script src="../Source/Locale.API.js"></script>
+	<script src="../Source/Locale.nl-NL.API.js"></script>
+
+	<script>
+		Locale.use('nl-NL');
+
+		window.gebeurtenisToevoegen('domklaar', function(){
+			var element = new Element('div');
+			element.injecteer(document.body);
+
+			element
+				.zetStijl('kleur', '#ff0')
+				.zet('tekst', 'Hallo, hoe gaat het?');
+
+			[1, 2, 3].elke(function(waarde, index){
+				console.log(waarde, index);
+			});
+
+		});
+
+	</script>
+
+</head>
+<body>
+
+	Hi
+
+</body>
+</html>
