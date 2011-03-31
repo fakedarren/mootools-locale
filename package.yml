@@ -1,0 +1,21 @@
+name: "Locale.API"
+
+exports: "Locale.API.js"
+
+web: "[mootools.net](http://mootools.net)"
+
+description: "MooTools Localized API"
+
+license: "[MIT License](http://mootools.net/license.txt)"
+
+copyright: "&copy; [MooTools](http://mootools.net)"
+
+authors: "[MooTools Development Team](http://mootools.net/developers)"
+
+sources:
+  - "Source/Locale.API.js"
+  - "Source/Locale.API.en-GB.js"
+  - "Source/Locale.API.de-DE.js"
+  - "Source/Locale.API.it-IT.js"
+  - "Source/Locale.API.nl-NL.js"
+  - "Source/Locale.API.uk-UA.js"
