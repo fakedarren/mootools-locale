@@ -125,11 +125,21 @@ var translation = {
 ['Element', 'Window', 'Document'].each(function(type){
 
 	Object.append(translation[type], {
-		addEvent: {method: 'gebeurtenisToevoegen', arguments: [events]},
+		addEvent: {
+			method: 'gebeurtenisToevoegen',
+			arguments: [events]
+		},
 		addEvents: 'gebeurtenissenToevoegen',
-		fireEvent: {method: 'vuurGebeurtenis', arguments: [events]},
-		removeEvent: {method: 'verwijderGebeurtenis', arguments: [events]},
-		removeEvents: 'verwijderGebeurtenissen'
+		fireEvent: {
+			method: 'vuurGebeurtenis',
+			arguments: [events]
+		},
+		removeEvent: {
+			method: 'verwijderGebeurtenis',
+			arguments: [events]
+		},
+		removeEvents: 'verwijderGebeurtenissen',
+		cloneEvents: 'kloonGebeurtenissen'
 	});
 
 });
