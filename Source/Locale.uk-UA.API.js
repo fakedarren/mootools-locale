@@ -146,4 +146,28 @@ Locale.define('uk-UA', 'API', translation);
 })();
 вікно = window;
 документ = document;
-документ.тіло = document.body;
+document.addEvent('domready', function(){
+	Document.implement('тіло', document.body);
+});
+Елемент = Element;
+консоль = console;
+консоль.вивести = console.log;
+/*
+Locale.use('uk-UA');
+
+вікно.додатиПодію('готовий', function(){
+    var елемент = new Element('div');
+    елемент.включитиВ(документ.тіло);
+
+    елемент
+        .встановитиСтиль('колір', '#00f')
+        .встановити('текст', 'Привіт з України');
+
+    [1, 2, 3].кожен(function(цифра, індекс){
+        new Element('p').встановити('текст', цифра + ' ' + індекс).включитиВ(документ.тіло);
+    });
+
+    var bla = $('bla').очистити();
+
+});
+*/
