@@ -11,26 +11,23 @@ provides: Locale.API
 
 var translateArguments = function(type, method, translate){
 
-	var oldMethod = type.prototype[method], methods = {};
+	var origin = type.prototype[method], methods = {};
+	if (origin.$origin) origin = origin.$origin;
 
 	methods[method] = function(){
 		var args = Array.map(arguments, function(value, i){
 			return (translate.arguments[i] && Object.keyOf(translate.arguments[i], value)) || value;
 		});
-		return oldMethod.apply(this, args);
-	};
+		return origin.apply(this, args);
+	}.extend({$origin: origin});
 
 	if (translate.method) methods[translate.method] = methods[method];
 	type.implement(methods);
 
 };
 
-var translateStatic = function(type, method, translate){
-
-	for (var old in translate){
-		type[translate[old]] = type[old];
-	}
-
+var translateStatic = function(type, translate){
+	for (var old in translate) type[translate[old]] = type[old];
 };
 
 var alias = function(name, existing){
@@ -52,7 +49,7 @@ Locale.API = function(){
 
 		Object.each(methods, function(translate, method){
 
-			if (method == 'static') translateStatic(type, method, translate);
+			if (method == 'static') translateStatic(type, translate);
 			else if (typeOf(translate) == 'object') translateArguments(type, method, translate);
 			else aliasses[translate] = method;
 
