@@ -14,8 +14,8 @@ authors: "[MooTools Development Team](http://mootools.net/developers)"
 
 sources:
   - "Source/Locale.API.js"
-  - "Source/Locale.API.en-GB.js"
-  - "Source/Locale.API.de-DE.js"
-  - "Source/Locale.API.it-IT.js"
-  - "Source/Locale.API.nl-NL.js"
-  - "Source/Locale.API.uk-UA.js"
+  - "Source/Locale.en-GB.API.js"
+  - "Source/Locale.de-DE.API.js"
+  - "Source/Locale.it-IT.API.js"
+  - "Source/Locale.nl-NL.API.js"
+  - "Source/Locale.uk-UA.API.js"
