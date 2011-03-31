@@ -31,6 +31,11 @@ Locale.API = function(){
 
 	Object.each(set, function(methods, _type){
 
+		if (_type == 'initialize' && typeOf(methods) == 'function'){
+			methods();
+			return;
+		}
+
 		var aliasses = {}, type = this[_type];
 
 		Object.each(methods, function(translate, method){
