@@ -9,7 +9,7 @@ provides: Locale.uk-UA.API
 
 (function(){
 
-var stijlen = {
+var styles = {
 	background: 'фон',
 	color: 'колір',
 	border: 'бордюр'
@@ -35,53 +35,53 @@ var translation = {
 			method: 'отримати',
 			arguments: [{text: 'текст'}]
 		},
-		erase: 'wis',
-		match: 'evenaar',
-		contains: 'bevat',
+		erase: 'видалити',
+		match: 'відповідає',
+		contains: 'включає',
 		inject: 'включитиВ',
-		grab: 'grijp',
-		adopt: 'adopteer',
-		wraps: 'wikkel',
-		appendText: 'tekstToevoegen',
-		dispose: 'verwijder',
-		clone: 'kloon',
-		replaces: 'vervang',
-		hasClass: 'heeftKlasse',
-		addClass: 'klasseToevoegen',
-		removeClass: 'klasseVerwijderen',
-		toggleClass: 'klasseSchakelen',
-		getPrevious: 'pakVorige',
-		getAllPrevious: 'pakAlleVorige',
-		getNext: 'pakVolgende',
-		getAllNext: 'pakAlleVolgende',
-		getFirst: 'pakEerste',
-		getLast: 'pakLaatste',
-		getParent: 'pakOuder',
-		getParents: 'pakOuders',
-		getSibling: 'pakBroer',
-		getChildren: 'pakKinderen',
+		grab: 'включити',
+		adopt: 'додати',
+		wraps: 'огорнути',
+		appendText: 'додатиТекст',
+		dispose: 'виключити',
+		clone: 'клонувати',
+		replaces: 'замінити',
+		hasClass: 'маєКлас',
+		addClass: 'додатиКлас',
+		removeClass: 'видалитиКлас',
+		toggleClass: 'перемкнутиКлас',
+		getPrevious: 'попередній',
+		getAllPrevious: 'всіПопередні',
+		getNext: 'наступний',
+		getAllNext: 'всіНаступні',
+		getFirst: 'перший',
+		getLast: 'останній',
+		getParent: 'батьківський',
+		getParents: 'всіБатьківські',
+		getSibling: 'сусіди',
+		getChildren: 'дочірні',
 		empty: 'очистити',
-		destroy: 'vernietig',
-		toQueryString: 'naarAanvraagSnaar',
-		getSelected: 'pakGeselecteerde',
-		getProperty: 'pakEigenschap',
-		getProperties: 'pakEigenschappen',
-		setProperty: 'zetEigenschap',
-		setProperties: 'zetEigenschappen',
-		removeProperty: 'verwijderEigenschap',
-		removeProperties: 'verwijderEigenschappen',
-		store: 'bewaar',
-		retrieve: 'ontvang',
-		eliminate: 'elimineer',
+		destroy: 'знищити',
+		toQueryString: 'вСтрічкуЗапиту',
+		getSelected: 'вибрані',
+		getProperty: 'повернутиВластивість',
+		getProperties: 'повернутиВластивості',
+		setProperty: 'встановитиВластивість',
+		setProperties: 'встановитиВластивості',
+		removeProperty: 'видалитиВластивість',
+		removeProperties: 'видалитиВластивості',
+		store: 'зберегти',
+		retrieve: 'вийняти',
+		eliminate: 'видалитиЗбережене',
 
 		// Element.Style
 		setStyle: {
 			method: 'встановитиСтиль',
-			arguments: [stijlen]
+			arguments: [styles]
 		},
 		getStyle: {
 			method: 'повернутиСтиль',
-			arguments: [stijlen]
+			arguments: [styles]
 		},
 		setStyles: 'встановитиСтилі',
 		getStyles: 'повернутиСтилі'
@@ -93,27 +93,27 @@ var translation = {
 
 	Array: {
 		each: 'кожен',
-		invoke: 'roepAan',
-		every: 'iedere',
+		invoke: 'викликати',
+		every: 'всі',
 		//filter: 'filter',
-		clean: 'opruimen',
-		indexOf: 'indexVan',
-		map: 'arrangeren',
-		some: 'sommige',
-		associate: 'verbinden',
+		clean: 'почистити',
+		indexOf: 'індекс',
+		map: 'мапа',
+		some: 'деякі',
+		associate: 'асоціювати',
 		//link: 'link',
-		contains: 'bevat',
-		append: 'bijvoegen',
-		getLast: 'pakLaatste',
-		getRandom: 'pakWillekeurige',
-		include: 'invoegen',
-		combine: 'combineer',
-		erase: 'wis',
+		contains: 'включає',
+		append: 'додати',
+		getLast: 'останній',
+		getRandom: 'випадковий',
+		include: 'включити',
+		combine: 'дописати',
+		erase: 'видалити',
 		empty: 'очистити',
-		flatten: 'vlak',
-		pick: 'pik',
-		hexToRgb: 'hexNaarRgb',
-		rgbToHex: 'rgbNaarHex'
+		flatten: 'вирівняти',
+		pick: 'вийняти',
+		hexToRgb: 'hexДоRgb',
+		rgbToHex: 'rgbДоHex'
 	}
 
 };
@@ -152,22 +152,3 @@ document.addEvent('domready', function(){
 Елемент = Element;
 консоль = console;
 консоль.вивести = console.log;
-/*
-Locale.use('uk-UA');
-
-вікно.додатиПодію('готовий', function(){
-    var елемент = new Element('div');
-    елемент.включитиВ(документ.тіло);
-
-    елемент
-        .встановитиСтиль('колір', '#00f')
-        .встановити('текст', 'Привіт з України');
-
-    [1, 2, 3].кожен(function(цифра, індекс){
-        new Element('p').встановити('текст', цифра + ' ' + індекс).включитиВ(документ.тіло);
-    });
-
-    var bla = $('bla').очистити();
-
-});
-*/
