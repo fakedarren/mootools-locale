@@ -70,11 +70,11 @@ var stijlen = {
 	'font-variant': 'letter-variant',
 	'font-weight': 'letter-gewicht',
 
-	'text-align': 'text-uitlijning',
-	'text-decoration': 'text-decoratie',
-	'text-indent': 'text-inspringen',
-	'text-shadow': 'text-schaduw',
-	'text-transform': 'text-transformatie',
+	'text-align': 'tekst-uitlijning',
+	'text-decoration': 'tekst-decoratie',
+	'text-indent': 'tekst-inspringen',
+	'text-shadow': 'tekst-schaduw',
+	'text-transform': 'tekst-transformatie',
 
 	'line-height': 'regel-hoogte',
 	'vertical-align': 'verticale-uitlijning',
