@@ -1,6 +1,6 @@
 MooTools Localized API
 ======================
 
-This repository is for MooTools developers; not users.
+Thanks everyone for (unwillingly) participating in our April Fools Joke. Please don't use localized programming languages or APIs.
 
-If you're interested in providing new translations please fork this repository and send us a pull request.
+[MooTools Gets a Little Closer to Home](http://mootools.net/blog/2011/04/01/mootools-gets-a-little-closer-to-home/)
