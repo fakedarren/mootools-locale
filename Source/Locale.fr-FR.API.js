@@ -9,13 +9,13 @@ provides: Locale.fr-FR.API
 
 (function(){
 
-var stile = {
+var style = {
 	background: 'fond',
 	color: 'couleur',
 	border: 'bordure'
 };
 
-var ereignisse = {
+var évènements = {
 	click: 'clique',
 	mouseover: 'sourisdessus',
 	mouseout: 'sourisdehors',
