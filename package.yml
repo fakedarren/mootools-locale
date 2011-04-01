@@ -16,6 +16,7 @@ sources:
   - "Source/Locale.API.js"
   - "Source/Locale.en-GB.API.js"
   - "Source/Locale.de-DE.API.js"
+  - "Source/Locale.fr-FR.API.js"
   - "Source/Locale.it-IT.API.js"
   - "Source/Locale.nl-NL.API.js"
   - "Source/Locale.uk-UA.API.js"
