@@ -65,7 +65,7 @@ var Traduction = {
 		getSibling: 'trouveFrères',
 		getChildren: 'trouveEnfants',
 		empty: 'vider',
-		destroy: 'detruire',
+		destroy: 'détruire',
 		toQueryString: 'enChaineDeRequête',
 		getSelected: 'trouveLesSelectionnés',
 		getProperty: 'trouveAttribut',
@@ -130,7 +130,7 @@ var Traduction = {
 
 ['Element', 'Window', 'Document'].each(function(typ){
 
-	Object.append(uebersetzung[typ], {
+	Object.append(Traduction[typ], {
 		addEvent: {
 			method: 'ajoutEvènement',
 			arguments: [evènements]
