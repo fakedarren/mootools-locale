@@ -10,7 +10,9 @@ provides: Locale.en-GB.API
 (function(){
 
 var styles = {
-	color: 'colour'
+	color: 'colour',
+	'background-color': 'background-colour',
+	'border-color': 'border-colour'
 };
 
 Locale.define('en-GB', 'API', {
