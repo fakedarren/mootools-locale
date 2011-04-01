@@ -12,7 +12,12 @@ provides: Locale.en-GB.API
 var styles = {
 	color: 'colour',
 	'background-color': 'background-colour',
-	'border-color': 'border-colour'
+	'border-color': 'border-colour',
+	'border-top-color': 'border-top-colour',
+	'border-right-color': 'border-right-colour',
+	'border-bottom-color': 'border-bottom-colour',
+	'border-left-color': 'border-left-colour',
+	'outline-color': 'outline-colour'
 };
 
 Locale.define('en-GB', 'API', {
