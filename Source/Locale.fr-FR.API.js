@@ -133,16 +133,16 @@ var Traduction = {
 	Object.append(Traduction[typ], {
 		addEvent: {
 			method: 'ajoutEvènement',
-			arguments: [evènements]
+			arguments: [évènements]
 		},
 		addEvents: 'ajoutEvènements',
 		fireEvent: {
 			method: 'déclancheEvènement',
-			arguments: [evènements]
+			arguments: [évènements]
 		},
 		removeEvent: {
 			method: 'effaceEvènement',
-			arguments: [evènements]
+			arguments: [évènements]
 		},
 		removeEvents: 'effaceEvènements',
 		cloneEvents: 'cloneEvènements'
