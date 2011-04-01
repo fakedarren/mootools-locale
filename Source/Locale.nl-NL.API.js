@@ -11,21 +11,128 @@ provides: Locale.nl-NL.API
 
 var stijlen = {
 	background: 'achtergrond',
+	'background-attachment': 'achtergrond-hechting',
+	'background-color': 'achtergrond-kleur',
+	'background-image': 'achtergrond-afbeelding',
+	'background-position': 'achtergrond-positie',
+	'background-repeat': 'achtergrond-herhaling',
 	color: 'kleur',
+
 	margin: 'marge',
+	'margin-top': 'marge-boven',
+	'margin-right': 'marge-rechts',
+	'margin-bottom': 'marge-onder',
+	'margin-left': 'marge-links',
+
 	padding: 'vulling',
+	'padding-top': 'vulling-boven',
+	'padding-right': 'vulling-rechts',
+	'padding-bottom': 'vulling-onder',
+	'padding-left': 'vulling-links',
+
 	border: 'rand',
+	'border-top': 'rand-boven',
+	'border-top-color': 'rand-boven-kleur',
+	'border-top-style': 'rand-boven-stijl',
+	'border-top-width': 'rand-boven-dikte',
+	'border-right': 'rand-rechts',
+	'border-right-color': 'rand-rechts-kleur',
+	'border-right-style': 'rand-rechts-stijl',
+	'border-right-width': 'rand-rechts-dikte',
+	'border-bottom': 'rand-onder',
+	'border-bottom-color': 'rand-onder-kleur',
+	'border-bottom-style': 'rand-onder-stijl',
+	'border-bottom-width': 'rand-onder-dikte',
+	'border-left': 'rand-links',
+	'border-left-color': 'rand-links-kleur',
+	'border-left-style': 'rand-links-stijl',
+	'border-left-width': 'rand-links-dikte',
+	'border-collapse': 'rand-samenvoegen',
+	'border-spacing': 'rand-afstand',
+
+	outline: 'omlijning',
+	'outline-color': 'omlijning-kleur',
+	'outline-style': 'omlijning-stijl',
+	'outline-width': 'omlijning-dikte',
+
 	width: 'breedte',
-	height: 'hoogte'
+	'max-width': 'max-breedte',
+	'min-width': 'min-breedte',
+
+	height: 'hoogte',
+	'max-height': 'max-hoogte',
+	'min-height': 'min-hoogte',
+
+	font: 'letter',
+	'font-family': 'lettertype',
+	'font-size': 'letter-grootte',
+	'font-style': 'letter-stijl',
+	'font-variant': 'letter-variant',
+	'font-weight': 'letter-gewicht',
+
+	'text-align': 'text-uitlijning',
+	'text-decoration': 'text-decoratie',
+	'text-indent': 'text-inspringen',
+	'text-shadow': 'text-schaduw',
+	'text-transform': 'text-transformatie',
+
+	'line-height': 'regel-hoogte',
+	'vertical-align': 'verticale-uitlijning',
+	'white-space': 'wit-ruimte',
+	'word-spacing': 'woord-afstand',
+	'letter-spacing': 'letter-afstand',
+	'direction': 'richting',
+
+	content: 'inhoud',
+	'counter-increment': 'teller-toenemen',
+	'counter-reset': 'teller-herstellen',
+	'quotes': 'aanhaalingstekens',
+
+	'list-style': 'lijst-stijl',
+	'list-style-image': 'lijst-stijl-afbeelding',
+	'list-style-position': 'lijst-stijl-positie',
+	'list-style-type': 'lijst-stijl-type',
+
+	position: 'positie',
+	top: 'boven',
+	right: 'rechts',
+	bottom: 'onder',
+	left: 'links',
+
+	'float': 'zweven',
+	clear: 'vrijmaken',
+	display: 'weergave',
+	visibility: 'zichtbaarheid',
+	overflow: 'overloop'
 };
 
 var events = {
 	click: 'klik',
+	dblclick: 'dubbelklik',
+	mousedown: 'muisknopin',
+	mouseup: 'muisknopuit',
+	mousemove: 'muisbewegen',
 	mouseover: 'muisover',
 	mouseout: 'muisuit',
 	mouseenter: 'muisbinnen',
 	mouseleave: 'muisvertrek',
-	domready: 'domklaar'
+
+	keydown: 'knopin',
+	keyup: 'knopuit',
+	keypress: 'knopdrukken',
+
+	domready: 'domklaar',
+	load: 'laden',
+	unload: 'afladen',
+	abort: 'afbreken',
+	error: 'fout',
+	resize: 'herschalen',
+
+	submit: 'indienen',
+	select: 'selecteren',
+	change: 'veranderen',
+	reset: 'herstellen',
+	blur: 'vervagen'
 };
 
 var newElement = function(tag, props){
